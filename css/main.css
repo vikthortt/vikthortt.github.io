@@ -1,0 +1,29 @@
+/*
+ * LAYOUT SMALL SCREENS
+ */
+   body{
+      margin: 0;
+      padding: 0;
+      border: 0;
+   }
+
+   .head {
+      box-sizing: border-box;
+      margin: 0;
+      border: 0;
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+
+      background-color: black;
+   }
+   .head h1,
+   .head h2,
+   .head h3,
+   .head h4,
+   .head h5,
+   .head h6{
+      font-size: 16px;
+      color: white;
+   }
