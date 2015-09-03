@@ -1,109 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/main.css">
+
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
    <title>Victor Torres</title>
 </head>
 <body>
-   <header class="head">
-      <h1>Victor Torres</h1>
-   </header>
+   <!-- Sections -->
+<nav id="head" class="navbar navbar-default navbar-fixed-top" role='navigation'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#menu"
+                aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+        </button>
+        <span id="Name">
+          <a href="#" class="navbar-brand">Victor Torres</a>
+        </span>
+      </div>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div id="home">
+  <div class="container">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="center-block">
+      <h1 class="page-header">
+        Victor Torres </br>
+        <small>Full Stack Developer</small>
+      </h1>
+      <!-- Social profile -->
+      <a class="btn btn-default btn-lg btn-social" href="#">
+        <i class="fa fa-linkedin"></i>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+      <a class="btn btn-default btn-lg btn-social" href="#">
+        <i class="fa fa-github"></i>
+        <span class="sr-only">Github</span>
+      </a>
+      <a class="btn btn-default btn-lg btn-social" href="#">
+        <i class="fa fa-twitter"></i>
+        <span class="sr-only">Twitter</span>
+      </a>
+      <a class="btn btn-default btn-lg btn-social" href="#">
+        <i class="fa fa-facebook"></i>
+        <span class="sr-only">Facebook</span>
+      </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div id="about"></div>
+<div id="portfolio">
 
-   <section class="body">
-      <header>
-         <h2>Proyectos</h2>
-      </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+          <img src="http://hearttohand.ca/wp-content/uploads/2014/04/placeholder2.png" alt="imgagen proyecto">
+          <div class="caption">
+            <h3>Proyect Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+          <img src="http://hearttohand.ca/wp-content/uploads/2014/04/placeholder2.png" alt="imgagen proyecto">
+          <div class="caption">
+            <h3>Proyect Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+          <img src="http://hearttohand.ca/wp-content/uploads/2014/04/placeholder2.png" alt="imgagen proyecto">
+          <div class="caption">
+            <h3>Proyect Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+          <img src="http://hearttohand.ca/wp-content/uploads/2014/04/placeholder2.png" alt="imgagen proyecto">
+          <div class="caption">
+            <h3>Proyect Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <!-- Proyecto -->
-      <article>
-         <header>
-            <h3>Nombre Proyecto</h3>
-         </header>
-         <section>
-            <img src="" alt="Imagen proyecto" height="120" width="120" />
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus amet similique cumque perspiciatis veniam ducimus! Aspernatur assumenda, fugit eum natus quae nesciunt inventore, quas debitis, dolorem asperiores ullam beatae.
-            </p>
-            <a href="#">Ir a</a>
-         </section>
-      </article>
+</div>
+<div id="contact">
+  <div class="container">
+  <div class="center-block row">
+    <div id="contact-form" class="col-sm-6 col-md-6">
+    <form action="#">
+      <div>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Name" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email" class="form-control"/>
+        </div>
+      </div>
 
-      <!-- Proyecto -->
-      <article>
-         <header>
-            <h3>Nombre Proyecto</h3>
-         </header>
-         <section>
-            <img src="" alt="Imagen proyecto" height="120" width="120" />
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus amet similique cumque perspiciatis veniam ducimus! Aspernatur assumenda, fugit eum natus quae nesciunt inventore, quas debitis, dolorem asperiores ullam beatae.
-            </p>
-            <a href="#">Ir a</a>
-         </section>
-      </article>
+      <div>
+        <label for="textarea">Comments:</label>
+        <textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Comments" class="form-control" rows="5"></textarea>
+      </div>
 
-      <!-- Proyecto -->
-      <article>
-         <header>
-            <h3>Nombre Proyecto</h3>
-         </header>
-         <section>
-            <img src="" alt="Imagen proyecto" height="120" width="120" />
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus amet similique cumque perspiciatis veniam ducimus! Aspernatur assumenda, fugit eum natus quae nesciunt inventore, quas debitis, dolorem asperiores ullam beatae.
-            </p>
-            <a href="#">Ir a</a>
-         </section>
-      </article>
-
-      <!-- Proyecto -->
-      <article>
-         <header>
-            <h3>Nombre Proyecto</h3>
-         </header>
-         <section>
-            <img src="" alt="Imagen proyecto" height="120" width="120" />
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus amet similique cumque perspiciatis veniam ducimus! Aspernatur assumenda, fugit eum natus quae nesciunt inventore, quas debitis, dolorem asperiores ullam beatae.
-            </p>
-            <a href="#">Ir a</a>
-         </section>
-      </article>
-
-      <!-- Proyecto -->
-      <article>
-         <header>
-            <h3>Nombre Proyecto</h3>
-         </header>
-         <section>
-            <img src="" alt="Imagen proyecto" height="120" width="120" />
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus amet similique cumque perspiciatis veniam ducimus! Aspernatur assumenda, fugit eum natus quae nesciunt inventore, quas debitis, dolorem asperiores ullam beatae.
-            </p>
-            <a href="#">Ir a</a>
-         </section>
-      </article>
-
-      <!-- Proyecto -->
-      <article>
-         <header>
-            <h3>Nombre Proyecto</h3>
-         </header>
-         <section>
-            <img src="" alt="Imagen proyecto" height="120" width="120" />
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus amet similique cumque perspiciatis veniam ducimus! Aspernatur assumenda, fugit eum natus quae nesciunt inventore, quas debitis, dolorem asperiores ullam beatae.
-            </p>
-            <a href="#">Ir a</a>
-         </section>
-      </article>
-
-   </section>
-
-   <footer class="foot">
-      <address></address>
-   </footer>
+      <div>
+        <input type="submit" value="Submit" class="btn btn-default pull-right" />
+      </div>
+    </form>
+    </div>
+  </div>
+  </div>
+</div>
+<footer id="footer"></footer>
 
 </body>
 </html>

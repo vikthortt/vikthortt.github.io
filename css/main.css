@@ -1,29 +1,36 @@
-/*
- * LAYOUT SMALL SCREENS
- */
-   body{
-      margin: 0;
-      padding: 0;
-      border: 0;
-   }
+/body{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 
-   .head {
-      box-sizing: border-box;
-      margin: 0;
-      border: 0;
-      width: 100%;
+#head{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 
-      position: absolute;
-      top: 0;
+#home, #about, #portfolio, #contact{
+  margin: 0;
+  border: 0;
+  padding-top: 6em;
+  //position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 
-      background-color: black;
-   }
-   .head h1,
-   .head h2,
-   .head h3,
-   .head h4,
-   .head h5,
-   .head h6{
-      font-size: 16px;
-      color: white;
-   }
+#home {
+  background-image: url(http://ipadbooks.contrataweb.com/wp-content/uploads/2012/09/Ahora-que-ha-llegado-el-oto%C3%B1o-te-traemos-35-fondos-de-pantalla-de-gran-calidad.jpg);
+}
+
+.jumbotron {
+  background-color: #EEEEEE;
+  background-color: rgb(238,238,238);
+  background-color: rgba(238,238,238,0.6);
+}
+
+.jumbotron .container{
+  max-width: 85%;
+}
