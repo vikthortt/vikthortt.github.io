@@ -1,4 +1,4 @@
-/body{
+body{
   margin: 0;
   border: 0;
   padding: 0;
@@ -14,7 +14,7 @@
   margin: 0;
   border: 0;
   padding-top: 6em;
-  //position: absolute;
+  position: relative;
   width: 100%;
   min-height: 100%;
   background-repeat:no-repeat;
@@ -22,7 +22,9 @@
 }
 
 #home {
-  background-image: url(http://ipadbooks.contrataweb.com/wp-content/uploads/2012/09/Ahora-que-ha-llegado-el-oto%C3%B1o-te-traemos-35-fondos-de-pantalla-de-gran-calidad.jpg);
+  position: fixed;
+  height: 100%;   
+  background-image: url(../images/technology-791032_1920x1280.jpg);
 }
 
 .jumbotron {
