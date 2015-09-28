@@ -1,245 +1,402 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.gray-blue.min.css">
+   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!--link rel="stylesheet" href="./css/bootstrap.min.css"-->
-   
-   <link rel="stylesheet" href="css/main.css">
 
-   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <!--script src="./js/jquery-1.11.2.js"></script>
-   <script src="./js/bootstrap.min.js"></script-->
+   <link rel="stylesheet" href="material.min.css">
+   <link rel="stylesheet" href="icon.css">
+   <script src="material.min.js"></script>
 
-   <title>Victor Torres</title>
+   <style>
+      body{
+         background: #f0f0f0; /* url(./images/technology-791032_1920x1280.jpg) no-repeat fixed center !important;*/
+      }
+
+      .content-card{
+         margin: 15px auto;
+         width: 90%;
+         max-width: 900px;
+      }
+
+      .project-card{
+         margin: 15px auto;
+      }
+
+      .social-btn {
+         font-size: 24px;
+         background-position: center;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-color: transparent;
+         margin: 0 16px;
+         width: 24px;
+         height: 24px;
+         cursor: pointer;
+         opacity: 0.46;
+         border-radius: 2px;
+      }
+      /*.social-btn__twitter {
+         background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+      }
+      .social-btn__facebook {
+         background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+      }
+      .social-btn__linkedin {
+         background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_linkedin_black_24dp.png');
+      }
+      .social-btn__github {
+         background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_octocat_black_24dp.png');
+      }*/
+   </style>
+
+   <title>PortFolio MDL</title>
 </head>
 <body>
-   <!-- Sections -->
-<nav id="head" class="navbar navbar-default navbar-fixed-top" role='navigation'>
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button"
-                class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#menu"
-                aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-        </button>
-        <span id="Name">
-          <a href="#" class="navbar-brand">Victor Torres</a>
-        </span>
+<!-- SITE CONTENT -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   <!--header class="mdl-layout__header mdl-layout__header--waterfall"-->
+   <header class="mdl-layout__header mdl-layout__header--waterfall">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+         <!-- Title -->
+         <span class="mdl-layout-title">Victor Torres</span>
+         <div class="mdl-layout-spacer"></div>
+         <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="#about">About</a>
+            <a class="mdl-navigation__link" href="#portfolio">PortFolio</a>
+            <a class="mdl-navigation__link" href="#contact">Contact</a>
+         </nav>
       </div>
-      <div id="menu" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+      <!-- Bottom row, not visible on scroll
+      <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+         <div class="mdl-layout-spacer"></div>
+         < !-- Navigation --  !>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">About</a>
+            <a class="mdl-navigation__link" href="">PortFolio</a>
+            <a class="mdl-navigation__link" href="">Contact</a>
+         </nav>
+      </div> -->
+   </header>
+   <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <span class="mdl-layout-title">Victor Torres</span>
+      <nav class="mdl-navigation">
+         <a class="mdl-navigation__link" href="">Home</a>
+         <a class="mdl-navigation__link" href="#about">About</a>
+         <a class="mdl-navigation__link" href="#portfolio">PortFolio</a>
+         <a class="mdl-navigation__link" href="#contact">Contact</a>
+      </nav>
+   </div>
+   <main class="mdl-layout__content">
+      <div class="page-content">
+         <!-- Your content goes below here -->
+
+         <!-- START LANDING -->
+         <!-- END LANDING -->
+
+         <!-- START ABOUT -->
+         <div id="about" class="mdl-card mdl-shadow--2dp content-card">
+            <div class="mdl-card__title">
+               <h2 class="mdl-card__title-text">About me! </h2>
+            </div>
+            <div class="mdl-card__media">
+
+            </div>
+            <div class="mdl-card__supporting-text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid impedit quas corrupti, ex quam minus. Asperiores soluta ex hic provident voluptatem, corrupti perspiciatis molestiae, harum nisi voluptatibus minima earum! Ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dignissimos repellendus error molestiae unde ducimus totam incidunt dolores aliquam, fuga nam eum non laudantium quo, perspiciatis nesciunt autem animi officiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aut tempora repellendus rerum magni non? Aut inventore laboriosam maiores, porro nobis eveniet, ducimus aspernatur consequatur quisquam nam. Vitae, porro, distinctio.
+            </div>
+         </div>
+         <!-- END ABOUT -->
+
+         <!-- START PORTFOLIO -->
+         <div id="portfolio" class="mdl-grid content-card">
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-4-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--col-phone mdl-card mdl-shadow--2dp project-card">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Project Title</h2>
+               </div>
+               <div class="mdl-card__media">
+
+               </div>
+               <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatum doloribus incidunt, blanditiis, tenetur dolor voluptas consequuntur vitae ratione sint laborum ducimus, possimus, debitis asperiores sit minima. Neque quas, ad.
+                  <div class="mdl-card__actions">
+                     <div class="mdl-layout-spacer"></div>
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        More
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END PORTFOLIO -->
+
+         <!-- START CONTACT -->
+         <div id="contact" class="mdl-card mdl-shadow--2dp content-card">
+            <div class="mdl-card__title">
+               <h2 class="mdl-card__title-text">Contact me! <h3 class="mdl-card__subtitle-text">Use the form below</h3> </h2>
+            </div>
+            <div class="mdl-card__media">
+
+            </div>
+            <div class="mdl-card__supporting-text">
+               <div class="mdl-grid">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--5-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <input class="mdl-textfield__input" type="text" id="contact-name" />
+                     <label class="mdl-textfield__label" for="contact-name">Name</label>
+                  </div>
+                  <div class="mdl-layout-spacer"></div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--5-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <input class="mdl-textfield__input" type="email" id="contact-email" />
+                     <label class="mdl-textfield__label" for="contact-email">Email</label>
+                     <span class="mdl-textfield__error">Please use a valid email address</span>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                     <textarea class="mdl-textfield__input" type="text" rows= "5" id="sample5" ></textarea>
+                     <label class="mdl-textfield__label" for="sample5">Write a comment</label>
+                  </div>
+               </div>
+               <div class="mdl-card__actions">
+                  <div class="mdl-layout-spacer"></div>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                     Send
+                  </button>
+               </div>
+            </div>
+         </div>
+         <!-- END CONTACT -->
+
+         <!-- Your content goes above here -->
       </div>
-    </div>
-  </nav>
-<div id="home">
-  <div class="container">
-  <div class="jumbotron">
-    <div class="container">
-      <div class="center-block">
-      <h1 class="page-header">
-        Victor Torres </br>
-        <small>Full Stack Developer</small>
-      </h1>
-      <!-- Social profile -->
-      <a class="btn btn-default btn-lg btn-social" href="#">
-        <i class="fa fa-linkedin"></i>
-        <span class="">LinkedIn</span>
-      </a>
-      <a class="btn btn-default btn-lg btn-social" href="#">
-        <i class="fa fa-github"></i>
-        <span class="">Github</span>
-      </a>
-      <a class="btn btn-default btn-lg btn-social" href="#">
-        <i class="fa fa-twitter"></i>
-        <span class="">Twitter</span>
-      </a>
-      <a class="btn btn-default btn-lg btn-social" href="#">
-        <i class="fa fa-facebook"></i>
-        <span class="">Facebook</span>
-      </a>
-      </div>
-    </div>
-  </div>
-  </div>
+
+      <!-- PAGE FOOTER -->
+      <footer class="mdl-mini-footer">
+         <div class="mdl-mini-footer__left-section">
+            <button class="mdl-mini-footer__social-btn social-btn social-btn__github">
+               <span class="visuallyhidden">Github</span>
+               <i class="fa fa-github-square"></i>
+            </button>
+            <button class="mdl-mini-footer__social-btn social-btn social-btn__twitter">
+               <span class="visuallyhidden">Twitter</span>
+               <i class="fa fa-twitter-square"></i>
+            </button>
+            <button class="mdl-mini-footer__social-btn social-btn social-btn__linkedin">
+               <span class="visuallyhidden">LinkedIn</span>
+               <i class="fa fa-linkedin-square"></i>
+            </button>
+            <button class="mdl-mini-footer__social-btn social-btn social-btn__facebook">
+               <span class="visuallyhidden">Facebook</span>
+               <i class="fa fa-facebook-square"></i>
+            </button>
+         </div>
+         <div class="mdl-mini-footer__right-section">
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-logo">
+               Victor Torres
+            </div>
+            <ul class="mdl-mini-footer__link-list">
+               <li><a href="#">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">PortFolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+      </footer>
+   </main>
 </div>
-<div id="about"></div>
-<div id="portfolio">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <img src="./images/train-445392_1920x1272.jpg" alt="imgagen proyecto">
-          <div class="caption">
-            <h3>Proyect Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, hic voluptate, blanditiis repellat quia molestiae mollitia fuga, ex aspernatur beatae, veniam iure voluptatem natus dolorem nostrum deserunt unde. Molestiae. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-<div id="contact">
-  <div class="container">
-  <div class="center-block row">
-    <div id="contact-form" class="col-sm-6 col-md-6">
-    <form action="#">
-      <div>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Name" class="form-control"/>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="Email" class="form-control"/>
-        </div>
-      </div>
-
-      <div>
-        <label for="textarea">Comments:</label>
-        <textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Comments" class="form-control" rows="5"></textarea>
-      </div>
-
-      <div>
-        <input type="submit" value="Submit" class="btn btn-default pull-right" />
-      </div>
-    </form>
-    </div>
-  </div>
-  </div>
-</div>
-<footer id="footer"></footer>
-
 </body>
 </html>
